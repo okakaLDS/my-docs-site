@@ -21,6 +21,9 @@ mkdocs --version
 
 ```bash
 cd C:\DOC
+```
+
+```bash
 mkdocs new my-docs-site
 ```
 

@@ -1,19 +1,61 @@
 site_name: My Docs
 site_url: https://okakaLDS.github.io/my-docs-site/
+
 theme:
   name: material
   language: ja
+  logo: images/logo.png
+  favicon: images/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切り替え
+  features:
+    - navigation.top
+    - navigation.expand
+    - navigation.sections
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.path
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
   - tables
+  - toc:
+      permalink: true
+
 nav:
   - ホーム: index.md
-  - 1. Python環境の準備: 01-python-setup.md
-  - 2. mkdocsのインストールとサイト作成: 02-mkdocs-install.md
-  - 3. GitHubリポジトリの作成とpush: 03-github-repo.md
-  - 4. GitHub Actionsによる自動デプロイ: 04-github-actions.md
-  - 5. GitHub Pagesの公開設定: 05-github-pages.md
-  - 6. ローカルでのプレビュー方法: 06-local-preview.md
+  - セットアップ:
+      - 1. Python環境の準備: 01-python-setup.md
+      - 2. mkdocsのインストールとサイト作成: 02-mkdocs-install.md
+  - GitHub公開:
+      - 3. GitHubリポジトリの作成とpush: 03-github-repo.md
+      - 4. GitHub Actionsによる自動デプロイ: 04-github-actions.md
+      - 5. GitHub Pagesの公開設定: 05-github-pages.md
+  - ローカル開発:
+      - 6. ローカルでのプレビュー方法: 06-local-preview.md

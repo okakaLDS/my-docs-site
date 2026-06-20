@@ -52,9 +52,19 @@ jobs:
 
 ```bash
 mkdir -p .github/workflows
-# 上のyamlを .github/workflows/deploy.yml として保存
+```
+
+上のyamlを `.github/workflows/deploy.yml` として保存したら、コミットしてpushします。
+
+```bash
 git add .github/workflows/deploy.yml
+```
+
+```bash
 git commit -m "Add auto deploy workflow"
+```
+
+```bash
 git push
 ```
 

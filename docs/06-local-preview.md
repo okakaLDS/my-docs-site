@@ -9,6 +9,9 @@
 
 ```bash
 cd my-docs-site
+```
+
+```bash
 mkdocs serve
 ```
 

@@ -32,6 +32,9 @@ winget install -e --id Python.Python.3.12 --source winget --accept-package-agree
 
 ```bash
 python --version
+```
+
+```bash
 pip --version
 ```
 

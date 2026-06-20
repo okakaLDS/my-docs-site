@@ -63,8 +63,17 @@ gh auth status
 
 ```bash
 cd my-docs-site
+```
+
+```bash
 git init
+```
+
+```bash
 git add -A
+```
+
+```bash
 git commit -m "Initial mkdocs site"
 ```
 
