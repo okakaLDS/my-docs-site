@@ -57,15 +57,10 @@ status: "完了"
     ✓ Logged in to github.com account あなたのユーザー名 (keyring)
     ```
 
-    !!! warning "workflowファイルを使う場合は権限を追加"
-        次の章でGitHub Actionsの設定ファイル（`.github/workflows/*.yml`)をpushします。
-        その際に `workflow` スコープが必要になるので、先に追加しておくとスムーズです。
+    次の章でGitHub Actionsの設定ファイル（`.github/workflows/*.yml`）をpushしますが、
+    その際 `workflow` スコープが必要になるので、先に追加しておくとスムーズです。
 
-        ```bash
-        gh auth refresh -h github.com -s workflow
-        ```
-
-        同様にブラウザでワンタイムコードを入力して承認します。
+    --8<-- "workflow-scope-warning.md"
 
     ## 3-4. ローカルのプロジェクトをGitリポジトリ化する
 

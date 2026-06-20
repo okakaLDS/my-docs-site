@@ -36,13 +36,20 @@ status: "公開中"
     | [5. GitHub Pagesの公開設定](02-github-publish/05-github-pages.md) | 公開のスイッチを入れる |
     | [6. ローカルでのプレビュー方法](03-local-dev/06-local-preview.md) | 公開前に手元で確認する |
     | [7. サイトデザインのカスタマイズ](04-customization/07-customization.md) | 配色・ナビゲーション・コードブロックを整える |
-    | [8. 図解(Mermaid)と更新日表示](04-customization/08-mermaid-and-revision-date.md) | 設計書向けに図と更新日を追加する |
+    | [8. 図解(Mermaid)と改定履歴](04-customization/08-mermaid-and-revision-date.md) | 設計書向けに図と改定履歴の管理方法を追加する |
+
+    ## このサイトのその他の機能
+
+    - [タグ一覧](tags.md) で機能横断にページを探せます
+    - `llms.txt`（[{{ extra.site_base_url }}llms.txt]({{ extra.site_base_url }}llms.txt)）でサイト全体の構成をAIが一括で読み取れます
+    - フォルダ構成は `awesome-pages` プラグインにより自動でナビゲーションに反映されます（`mkdocs.yml`の手動編集は不要）
 
     ## このサイトの公開先（実例）
 
-    https://okakalds.github.io/my-docs-site/
+    {{ extra.site_base_url }}
 
-    同じ手順で、自分のリポジトリ名・GitHubユーザー名に置き換えれば同様に公開できます。
+    同じ手順で、自分のリポジトリ名（`{{ extra.repo_name }}`）・GitHubユーザー名（`{{ extra.github_user }}`）を
+    置き換えれば同様に公開できます。
 
 === "改定履歴"
 

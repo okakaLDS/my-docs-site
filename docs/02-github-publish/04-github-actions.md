@@ -119,6 +119,8 @@ status: "完了"
         また、リポジトリの Settings > Actions > General で
         「Workflow permissions」が `Read and write permissions` になっているかも確認します。
 
+    --8<-- "workflow-scope-warning.md"
+
 === "改定履歴"
 
     | 更新日 | 更新者 | 更新内容 |

@@ -37,9 +37,19 @@ theme:
     - content.tabs.link
     - toc.follow
 
+extra:
+  github_user: okakaLDS
+  repo_name: my-docs-site
+  repo_url: https://github.com/okakaLDS/my-docs-site
+  site_base_url: https://okakalds.github.io/my-docs-site/
+
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.snippets:
+      base_path:
+        - snippets
+      check_paths: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -55,6 +65,7 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
+  - macros
   - tags:
       tags_file: tags.md
   - llmstxt:

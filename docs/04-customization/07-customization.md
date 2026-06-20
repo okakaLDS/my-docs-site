@@ -116,7 +116,44 @@ status: "完了"
     あえて分割せずそのまま1ブロックにしています。分割の基準は
     「読者が実行するタイミングが分かれるかどうか」です。
 
-    ## 7-4. まとめ：GitHub Pages活用の観点で意識したこと
+    ## 7-4. 変数・再利用コンテンツ（macros / snippets）
+
+    GitHubユーザー名やリポジトリ名のような「サイト内で何度も出てくる値」は、
+    `mkdocs.yml` の `extra:` に変数として1か所だけ定義し、各ページからは
+    `{% raw %}{{ extra.github_user }}{% endraw %}` のように参照しています
+    （`mkdocs-macros-plugin` が必要です）。
+
+    ```yaml title="mkdocs.yml"
+    extra:
+      github_user: okakaLDS
+      repo_name: my-docs-site
+      repo_url: https://github.com/okakaLDS/my-docs-site
+      site_base_url: https://okakalds.github.io/my-docs-site/
+
+    plugins:
+      - macros
+    ```
+
+    また、複数ページで同じ注意書き（例: `workflow` スコープが必要という警告）を
+    繰り返し書いていた箇所は、`pymdownx.snippets` で1つのファイルに切り出し、
+    各ページから読み込む形に変更しました。
+
+    ```yaml title="mkdocs.yml"
+    markdown_extensions:
+      - pymdownx.snippets:
+          base_path:
+            - snippets
+          check_paths: true
+    ```
+
+    ```markdown title="呼び出し側のページ"
+    --8<-- "workflow-scope-warning.md"
+    ```
+
+    どちらも「同じ内容を複数箇所に書かない」ための仕組みです。文章を直すときに
+    1か所直し忘れて内容がズレる、という事故を防げます。
+
+    ## 7-5. まとめ：GitHub Pages活用の観点で意識したこと
 
     | 工夫 | 効果 |
     |---|---|
@@ -125,6 +162,7 @@ status: "完了"
     | セクション分けしたナビゲーション | 章が増えても迷わない設計に |
     | ブレッドクラム・前後リンク | 読者が「今どこにいるか」を見失わない |
     | コードブロックの分割 | コピペ作業時のミス・余計な手間を減らす |
+    | macros / snippets | 同じ値・同じ注意書きを1か所で管理し、修正漏れを防ぐ |
 
     これらはすべて `mkdocs.yml` を編集して `git push` するだけで反映されます
     （[4. GitHub Actionsによる自動デプロイ](../02-github-publish/04-github-actions.md)の仕組みがそのまま使えます）。
