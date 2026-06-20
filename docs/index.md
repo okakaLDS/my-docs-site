@@ -27,6 +27,7 @@
 | [5. GitHub Pagesの公開設定](05-github-pages.md) | 公開のスイッチを入れる |
 | [6. ローカルでのプレビュー方法](06-local-preview.md) | 公開前に手元で確認する |
 | [7. サイトデザインのカスタマイズ](07-customization.md) | 配色・ナビゲーション・コードブロックを整える |
+| [8. 図解(Mermaid)と更新日表示](08-mermaid-and-revision-date.md) | 設計書向けに図と更新日を追加する |
 
 ## このサイトの公開先（実例）
 
