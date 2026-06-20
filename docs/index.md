@@ -26,6 +26,7 @@
 | [4. GitHub Actionsによる自動デプロイ](04-github-actions.md) | push→公開を自動化する |
 | [5. GitHub Pagesの公開設定](05-github-pages.md) | 公開のスイッチを入れる |
 | [6. ローカルでのプレビュー方法](06-local-preview.md) | 公開前に手元で確認する |
+| [7. サイトデザインのカスタマイズ](07-customization.md) | 配色・ナビゲーション・コードブロックを整える |
 
 ## このサイトの公開先（実例）
 

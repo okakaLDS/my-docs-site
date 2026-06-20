@@ -59,3 +59,5 @@ nav:
       - 5. GitHub Pagesの公開設定: 05-github-pages.md
   - ローカル開発:
       - 6. ローカルでのプレビュー方法: 06-local-preview.md
+  - デザインのカスタマイズ:
+      - 7. サイトデザインのカスタマイズ: 07-customization.md
