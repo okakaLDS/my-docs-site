@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# MkDocs + GitHub Pages 公開メモ
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+このサイトは、MkDocsでMarkdownサイトを作り、GitHub Pagesで公開するまでの作業記録です。
+左のナビゲーションから各章を見てください。
 
-## Commands
+1. [Python環境の準備](01-python-setup.md)
+2. [mkdocsのインストールとサイト作成](02-mkdocs-install.md)
+3. [GitHubリポジトリの作成とpush](03-github-repo.md)
+4. [GitHub Actionsによる自動デプロイ](04-github-actions.md)
+5. [GitHub Pagesの公開設定](05-github-pages.md)
+6. [ローカルでのプレビュー方法](06-local-preview.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 公開先
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+https://okakalds.github.io/my-docs-site/
