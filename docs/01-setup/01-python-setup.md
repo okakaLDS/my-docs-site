@@ -1,3 +1,11 @@
+---
+title: "1. Python環境の準備"
+tags:
+  - セットアップ
+  - Python
+status: "完了"
+---
+
 # 1. Python環境の準備
 
 === "本文"

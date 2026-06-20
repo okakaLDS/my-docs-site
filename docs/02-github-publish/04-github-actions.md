@@ -1,3 +1,11 @@
+---
+title: "4. GitHub Actionsによる自動デプロイ"
+tags:
+  - GitHub公開
+  - CI/CD
+status: "完了"
+---
+
 # 4. GitHub Actionsによる自動デプロイ
 
 === "本文"
@@ -34,7 +42,7 @@
 
     実行の流れはこのようになります。
 
-    ![GitHub Actionsの実行ステップ](images/actions-flow.svg)
+    ![GitHub Actionsの実行ステップ](../images/actions-flow.svg)
 
     各行の意味：
 

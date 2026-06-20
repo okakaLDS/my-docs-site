@@ -1,3 +1,11 @@
+---
+title: "2. mkdocsのインストールとサイト作成"
+tags:
+  - セットアップ
+  - mkdocs
+status: "完了"
+---
+
 # 2. mkdocsのインストールとサイト作成
 
 === "本文"
@@ -31,7 +39,7 @@
 
     以下のファイルが自動生成されます。
 
-    ![フォルダ構成](images/folder-structure.svg)
+    ![フォルダ構成](../images/folder-structure.svg)
 
     - `mkdocs.yml` : サイト全体の設定ファイル（タイトル、テーマ、ナビゲーションなど）
     - `docs/index.md` : トップページの内容

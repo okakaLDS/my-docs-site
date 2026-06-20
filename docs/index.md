@@ -1,3 +1,10 @@
+---
+title: "MkDocs + GitHub Pages 公開ガイド"
+tags:
+  - 概要
+status: "公開中"
+---
+
 # MkDocs + GitHub Pages 公開ガイド
 
 === "本文"
@@ -22,14 +29,14 @@
 
     | 章 | 内容 |
     |---|---|
-    | [1. Python環境の準備](01-python-setup.md) | MkDocsを動かすための土台づくり |
-    | [2. mkdocsのインストールとサイト作成](02-mkdocs-install.md) | サイトの雛形を作る |
-    | [3. GitHubリポジトリの作成とpush](03-github-repo.md) | コードをGitHubに置く |
-    | [4. GitHub Actionsによる自動デプロイ](04-github-actions.md) | push→公開を自動化する |
-    | [5. GitHub Pagesの公開設定](05-github-pages.md) | 公開のスイッチを入れる |
-    | [6. ローカルでのプレビュー方法](06-local-preview.md) | 公開前に手元で確認する |
-    | [7. サイトデザインのカスタマイズ](07-customization.md) | 配色・ナビゲーション・コードブロックを整える |
-    | [8. 図解(Mermaid)と更新日表示](08-mermaid-and-revision-date.md) | 設計書向けに図と更新日を追加する |
+    | [1. Python環境の準備](01-setup/01-python-setup.md) | MkDocsを動かすための土台づくり |
+    | [2. mkdocsのインストールとサイト作成](01-setup/02-mkdocs-install.md) | サイトの雛形を作る |
+    | [3. GitHubリポジトリの作成とpush](02-github-publish/03-github-repo.md) | コードをGitHubに置く |
+    | [4. GitHub Actionsによる自動デプロイ](02-github-publish/04-github-actions.md) | push→公開を自動化する |
+    | [5. GitHub Pagesの公開設定](02-github-publish/05-github-pages.md) | 公開のスイッチを入れる |
+    | [6. ローカルでのプレビュー方法](03-local-dev/06-local-preview.md) | 公開前に手元で確認する |
+    | [7. サイトデザインのカスタマイズ](04-customization/07-customization.md) | 配色・ナビゲーション・コードブロックを整える |
+    | [8. 図解(Mermaid)と更新日表示](04-customization/08-mermaid-and-revision-date.md) | 設計書向けに図と更新日を追加する |
 
     ## このサイトの公開先（実例）
 

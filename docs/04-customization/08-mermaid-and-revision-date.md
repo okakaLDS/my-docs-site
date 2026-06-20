@@ -1,3 +1,12 @@
+---
+title: "8. 図解(Mermaid)と改定履歴"
+tags:
+  - デザイン
+  - Mermaid
+  - 改定履歴
+status: "完了"
+---
+
 # 8. 図解(Mermaid)と更新日表示
 
 === "本文"

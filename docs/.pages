@@ -1,0 +1,7 @@
+nav:
+  - ホーム: index.md
+  - 01-setup
+  - 02-github-publish
+  - 03-local-dev
+  - 04-customization
+  - タグ一覧: tags.md

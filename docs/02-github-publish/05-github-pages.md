@@ -1,3 +1,11 @@
+---
+title: "5. GitHub Pagesの公開設定"
+tags:
+  - GitHub公開
+  - 公開設定
+status: "完了"
+---
+
 # 5. GitHub Pagesの公開設定
 
 === "本文"
@@ -14,7 +22,7 @@
 
     イメージ図：
 
-    ![GitHub Pages設定画面イメージ](images/pages-settings-mock.svg)
+    ![GitHub Pages設定画面イメージ](../images/pages-settings-mock.svg)
 
     保存すると、ページ上部に公開URLが表示されます（数十秒〜数分で反映）。
 

@@ -1,3 +1,11 @@
+---
+title: "3. GitHubリポジトリの作成とpush"
+tags:
+  - GitHub公開
+  - Git
+status: "完了"
+---
+
 # 3. GitHubリポジトリの作成とpush
 
 === "本文"
