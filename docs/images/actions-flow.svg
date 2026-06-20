@@ -1,0 +1,52 @@
+<svg viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#5b6b7c"/>
+    </marker>
+  </defs>
+  <style>
+    .step { fill:#fff5e6; stroke:#d98c2b; stroke-width:2; }
+    .label { font-size:14px; fill:#3d2b00; font-weight:bold; }
+    .sub { font-size:11px; fill:#6b5a3a; }
+    .arrow { stroke:#5b6b7c; stroke-width:2; fill:none; marker-end:url(#arrow2); }
+    .num { fill:#d98c2b; font-size:14px; font-weight:bold; }
+  </style>
+
+  <circle class="step" cx="60" cy="60" r="28"/>
+  <text class="num" x="60" y="65" text-anchor="middle">1</text>
+  <text class="label" x="60" y="105" text-anchor="middle">checkout</text>
+  <text class="sub" x="60" y="120" text-anchor="middle">リポジトリ取得</text>
+
+  <line class="arrow" x1="95" y1="60" x2="165" y2="60"/>
+
+  <circle class="step" cx="200" cy="60" r="28"/>
+  <text class="num" x="200" y="65" text-anchor="middle">2</text>
+  <text class="label" x="200" y="105" text-anchor="middle">setup-python</text>
+  <text class="sub" x="200" y="120" text-anchor="middle">Python環境構築</text>
+
+  <line class="arrow" x1="235" y1="60" x2="305" y2="60"/>
+
+  <circle class="step" cx="340" cy="60" r="28"/>
+  <text class="num" x="340" y="65" text-anchor="middle">3</text>
+  <text class="label" x="340" y="105" text-anchor="middle">pip install</text>
+  <text class="sub" x="340" y="120" text-anchor="middle">mkdocs導入</text>
+
+  <line class="arrow" x1="375" y1="60" x2="445" y2="60"/>
+
+  <circle class="step" cx="480" cy="60" r="28"/>
+  <text class="num" x="480" y="65" text-anchor="middle">4</text>
+  <text class="label" x="480" y="105" text-anchor="middle">gh-deploy</text>
+  <text class="sub" x="480" y="120" text-anchor="middle">ビルド &amp; push</text>
+
+  <line class="arrow" x1="515" y1="60" x2="585" y2="60"/>
+
+  <circle class="step" cx="620" cy="60" r="28"/>
+  <text class="num" x="620" y="65" text-anchor="middle">✓</text>
+  <text class="label" x="620" y="105" text-anchor="middle">公開</text>
+  <text class="sub" x="620" y="120" text-anchor="middle">gh-pagesに反映</text>
+
+  <rect x="20" y="160" width="700" height="100" rx="8" fill="#f4f4f4" stroke="#ccc"/>
+  <text x="40" y="185" font-size="13" fill="#333" font-weight="bold">トリガー条件 (.github/workflows/deploy.yml)</text>
+  <text x="40" y="210" font-size="12" fill="#555">on: push  →  branches: [main]</text>
+  <text x="40" y="232" font-size="12" fill="#555">mainブランチにpushされた瞬間に、上の1〜5のステップが自動実行されます。</text>
+</svg>

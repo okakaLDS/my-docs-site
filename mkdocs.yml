@@ -3,6 +3,12 @@ site_url: https://okakaLDS.github.io/my-docs-site/
 theme:
   name: material
   language: ja
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - tables
 nav:
   - ホーム: index.md
   - 1. Python環境の準備: 01-python-setup.md

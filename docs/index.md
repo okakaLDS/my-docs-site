@@ -1,15 +1,34 @@
-# MkDocs + GitHub Pages 公開メモ
+# MkDocs + GitHub Pages 公開ガイド
 
-このサイトは、MkDocsでMarkdownサイトを作り、GitHub Pagesで公開するまでの作業記録です。
-左のナビゲーションから各章を見てください。
+このサイトは、Markdownで書いたドキュメントを **MkDocs** でサイト化し、
+**GitHub Pages** で無料公開するまでの手順を、自分で再現できるレベルでまとめたものです。
 
-1. [Python環境の準備](01-python-setup.md)
-2. [mkdocsのインストールとサイト作成](02-mkdocs-install.md)
-3. [GitHubリポジトリの作成とpush](03-github-repo.md)
-4. [GitHub Actionsによる自動デプロイ](04-github-actions.md)
-5. [GitHub Pagesの公開設定](05-github-pages.md)
-6. [ローカルでのプレビュー方法](06-local-preview.md)
+## 全体の流れ
 
-## 公開先
+![全体の流れ](images/overview.svg)
+
+1. ローカルPCで Markdown ファイルを編集する
+2. GitHubのリポジトリに `git push` する
+3. push をきっかけに **GitHub Actions** が自動でビルドする
+4. ビルド結果が `gh-pages` ブランチに送られる
+5. **GitHub Pages** がそのブランチの内容を世界に公開する
+
+一度この仕組みを作ってしまえば、以降は **Markdownを編集してpushするだけ** で
+サイトが自動更新されます。手動でのアップロード作業は不要です。
+
+## 章の構成
+
+| 章 | 内容 |
+|---|---|
+| [1. Python環境の準備](01-python-setup.md) | MkDocsを動かすための土台づくり |
+| [2. mkdocsのインストールとサイト作成](02-mkdocs-install.md) | サイトの雛形を作る |
+| [3. GitHubリポジトリの作成とpush](03-github-repo.md) | コードをGitHubに置く |
+| [4. GitHub Actionsによる自動デプロイ](04-github-actions.md) | push→公開を自動化する |
+| [5. GitHub Pagesの公開設定](05-github-pages.md) | 公開のスイッチを入れる |
+| [6. ローカルでのプレビュー方法](06-local-preview.md) | 公開前に手元で確認する |
+
+## このサイトの公開先（実例）
 
 https://okakalds.github.io/my-docs-site/
+
+同じ手順で、自分のリポジトリ名・GitHubユーザー名に置き換えれば同様に公開できます。
