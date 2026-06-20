@@ -1,0 +1,7 @@
+site_name: My Docs
+site_url: https://okakaLDS.github.io/my-docs-site/
+theme:
+  name: material
+  language: ja
+nav:
+  - ホーム: index.md
