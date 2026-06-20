@@ -54,11 +54,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - git-revision-date-localized:
-      type: datetime
-      timezone: Asia/Tokyo
-      locale: ja
-      fallback_to_build_date: true
 
 nav:
   - ホーム: index.md
