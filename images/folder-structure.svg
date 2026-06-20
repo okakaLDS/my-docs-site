@@ -1,0 +1,29 @@
+<svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, monospace">
+  <style>
+    .bg { fill:#1e1e1e; }
+    .dir { fill:#7ec3ff; font-weight:bold; }
+    .file { fill:#d4d4d4; }
+    .yml { fill:#f3c969; }
+    .md { fill:#9fd99f; }
+    .comment { fill:#7a7a7a; font-style:italic; }
+    text { font-size:15px; }
+  </style>
+  <rect class="bg" x="0" y="0" width="600" height="320" rx="8"/>
+  <text x="20" y="35" class="dir">my-docs-site/</text>
+  <text x="40" y="60" class="dir">.github/</text>
+  <text x="60" y="85" class="dir">workflows/</text>
+  <text x="80" y="110" class="yml">deploy.yml</text>
+  <text x="280" y="110" class="comment"># 自動デプロイ設定</text>
+
+  <text x="40" y="140" class="dir">docs/</text>
+  <text x="60" y="165" class="md">index.md</text>
+  <text x="280" y="165" class="comment"># トップページ</text>
+  <text x="60" y="190" class="md">01-python-setup.md</text>
+  <text x="60" y="215" class="md">02-mkdocs-install.md</text>
+  <text x="60" y="240" class="md">...</text>
+  <text x="60" y="265" class="dir">images/</text>
+  <text x="280" y="265" class="comment"># 図解・画像</text>
+
+  <text x="40" y="295" class="yml">mkdocs.yml</text>
+  <text x="280" y="295" class="comment"># サイト全体の設定ファイル</text>
+</svg>

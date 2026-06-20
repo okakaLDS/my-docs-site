@@ -1,0 +1,37 @@
+<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <defs>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#5b6b7c"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill:#eef9f0; stroke:#2e9e4f; stroke-width:2; }
+    .label { font-size:14px; fill:#1c3d24; font-weight:bold; }
+    .sub { font-size:11px; fill:#4a6b53; }
+    .arrow { stroke:#5b6b7c; stroke-width:2; fill:none; marker-end:url(#arrow3); }
+  </style>
+
+  <rect class="box" x="20" y="40" width="170" height="80" rx="8"/>
+  <text class="label" x="105" y="75" text-anchor="middle">docs/*.md を編集</text>
+  <text class="sub" x="105" y="95" text-anchor="middle">保存(Ctrl+S)</text>
+
+  <line class="arrow" x1="195" y1="80" x2="255" y2="80"/>
+
+  <rect class="box" x="260" y="40" width="170" height="80" rx="8"/>
+  <text class="label" x="345" y="70" text-anchor="middle">mkdocs serve</text>
+  <text class="sub" x="345" y="90" text-anchor="middle">変更を自動検知</text>
+  <text class="sub" x="345" y="105" text-anchor="middle">→ 自動で再ビルド</text>
+
+  <line class="arrow" x1="435" y1="80" x2="495" y2="80"/>
+
+  <rect class="box" x="500" y="40" width="180" height="80" rx="8"/>
+  <text class="label" x="590" y="70" text-anchor="middle">ブラウザ</text>
+  <text class="sub" x="590" y="90" text-anchor="middle">127.0.0.1:8000</text>
+  <text class="sub" x="590" y="105" text-anchor="middle">自動でリロード表示</text>
+
+  <line class="arrow" x1="345" y1="120" x2="200" y2="170"/>
+  <text class="sub" x="270" y="165" text-anchor="middle">繰り返し編集</text>
+
+  <rect x="20" y="180" width="660" height="45" rx="6" fill="#fafafa" stroke="#ddd"/>
+  <text x="35" y="207" font-size="12" fill="#444">編集 → 保存 → ブラウザが自動更新、を繰り返すだけで public への push なしに確認できます。</text>
+</svg>

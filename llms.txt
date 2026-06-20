@@ -1,0 +1,22 @@
+# My Docs
+
+## セットアップ
+
+- [1. Python環境の準備](https://okakaLDS.github.io/my-docs-site/01-setup/01-python-setup/index.md)
+- [2. mkdocsのインストールとサイト作成](https://okakaLDS.github.io/my-docs-site/01-setup/02-mkdocs-install/index.md)
+
+## GitHub公開
+
+- [3. GitHubリポジトリの作成とpush](https://okakaLDS.github.io/my-docs-site/02-github-publish/03-github-repo/index.md)
+- [4. GitHub Actionsによる自動デプロイ](https://okakaLDS.github.io/my-docs-site/02-github-publish/04-github-actions/index.md)
+- [5. GitHub Pagesの公開設定](https://okakaLDS.github.io/my-docs-site/02-github-publish/05-github-pages/index.md)
+
+## ローカル開発
+
+- [6. ローカルでのプレビュー方法](https://okakaLDS.github.io/my-docs-site/03-local-dev/06-local-preview/index.md)
+
+## デザインのカスタマイズ
+
+- [7. サイトデザインのカスタマイズ](https://okakaLDS.github.io/my-docs-site/04-customization/07-customization/index.md)
+- [8. 図解(Mermaid)と改定履歴](https://okakaLDS.github.io/my-docs-site/04-customization/08-mermaid-and-revision-date/index.md)
+
